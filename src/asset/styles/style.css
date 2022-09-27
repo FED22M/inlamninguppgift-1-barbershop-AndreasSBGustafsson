@@ -68,9 +68,9 @@ h2 {
 
 .body-border {
     align-self: flex-end;
-    position: absolute;
-    bottom: 134px;
-    height: 285px;
+    position: relative;
+    top: 95px;
+    height: 300px;
     width:10px;
     margin: 0;
     border-left: 4px solid rgb(191, 141, 91);
