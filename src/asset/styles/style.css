@@ -33,7 +33,7 @@ h2 {
  left: 0; /* utifall det är mellanru runt nav baren */
 }
 
-.header {
+.header, .sec-2,.sec-3, .sec-4, .sec-5 {
     background: url('../img/Barbershop.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -65,17 +65,91 @@ margin-left: 15%;
     line-height: 1.5;
 }
 
+.sec-2, .sec-3, .sec-4, .sec-5 {
+    margin: 0%;
+    padding: 0;
+}
 
+.sec-2 {
+    background-color:transparent;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:3rem;
+}
 
+.service-1, .service-2, .service-3, .service-4 {
+ 
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    height: 475px;
+    width: 320px;
+    
+}
 
+.sec-3 {
+    /* height: 920px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.sec-3-wrapper{
+ background-color:transparent;
+ position: relative;
+ height: 685px;
+ width: 100%;display: flex;
+ align-items: flex-end;
+}
 
+.about-bg {
+    background-color: blue;
+    position: relative;
+    height: 610px;
+    width: 100%;
+}
 
+.about-img {
+    background-color: crimson;
+    position: absolute;
+    top:-68px;
+    left:119px;
+    height: 610px;
+    width:480px;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
 
+.about-txt {
+ background-color: green;
+ position:absolute;
+ height: 355px;
+ width: 640px;
+ right:134px;
+ top:35px;
+ 
+}
 
+.exp {
+ background-color:yellow;
+ position:absolute;
+ bottom:68px;
+ right:283px;
+ width:438px;
+ height:118px;
+/* -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 20%); komplitett till gamla webbläsare*/
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
 
-.sec-1 {
-    background-color: rgb(8, 71, 196);
+.sec-4 {
+    height: 1080px;
+    width: 100%;
+}
+
+.sec-5 {
     height: 1080px;
     width: 100%;
 }
