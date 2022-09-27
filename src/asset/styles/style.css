@@ -58,18 +58,54 @@ h2 {
 
 }
 
+.body-wrapper {
+    height: 242px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.body-border {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 134px;
+    height: 285px;
+    width:10px;
+    margin: 0;
+    border-left: 4px solid rgb(191, 141, 91);
+}
 
 .body-txt {
 text-overflow: wrap;
 width: 850px;
 margin-left: 15%;
+/* border-spacing: -50px; */
+/* border-radius: 1rem; */
 }
 
 .body-txt p {
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+  
 }
+
+.about-header-button {
+    padding: 10px;
+    border: 4px solid rgb(191, 141, 91);
+    display: inline-block;
+}
+
+.learn-more-header {
+font-size: 2rem;
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+text-transform: uppercase;
+color: rgb(191, 141, 91);
+}
+
+
 
 .sec-2, .sec-3, .sec-4, .sec-5 {
     margin: 0%;
