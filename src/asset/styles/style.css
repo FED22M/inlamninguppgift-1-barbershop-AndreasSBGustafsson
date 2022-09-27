@@ -6,7 +6,7 @@ body {
 /* text size */
 
 h1 {
-font-size: 2rem;
+font-size: 1rem;
 font-family: 'Poppins', sans-serif;
 font-weight: 500;
 text-transform: uppercase;
@@ -44,7 +44,7 @@ h2 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1080px;
+    height: 900px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -52,8 +52,8 @@ h2 {
 }
 
 .header-wrapper {
-
     width: 60%;
+    padding-bottom: 90px;
     color: white;
 
 }
@@ -69,8 +69,8 @@ h2 {
 .body-border {
     align-self: flex-end;
     position: relative;
-    top: 95px;
-    height: 300px;
+    top: 30px;
+    height: 242px;
     width:10px;
     margin: 0;
     border-left: 4px solid rgb(191, 141, 91);
@@ -85,16 +85,21 @@ margin-left: 15%;
 }
 
 .body-txt p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
   
 }
 
 .about-header-button {
+    color: rgb(191, 141, 91);
+    
     padding: 10px;
     border: 4px solid rgb(191, 141, 91);
     display: inline-block;
+}
+.about-header-button:hover {
+    color: purple;
 }
 
 .learn-more-header {
