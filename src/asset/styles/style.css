@@ -32,7 +32,7 @@ h2 {
 
 .nav {
  width: 100vw;
- height: 4rem;
+ height: 3rem;
  background-color: rgba(0, 0, 0, 0.711); 
  position: fixed;
  top: 0;
@@ -40,20 +40,20 @@ h2 {
  z-index: 5;
 }
 
-.header, .products , .about, .review {
+    .header, .products , .about, .review {
     background: url('../img/Barbershop.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.products, .about, .review, .footer {
+.products, .about, .review {
     margin: 0%;
-    padding: 0;
+    padding: 3rem 0;
 }
 
 
@@ -226,6 +226,7 @@ top: -100px;
     height: 610px;
     width:480px;
     object-fit: cover;
+    border-radius: 15px;
 /*     justify-self: flex-start;
     align-self: flex-start; */
 }
@@ -326,33 +327,21 @@ margin: 0;
 /*----------------------review---------------*/
 
 .review-wrapper {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     position: relative;
     display: flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-/*     height: 510px; */
-    width: 1600px;
-    padding: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #EAE8DE;
+    /*     height: 510px; */
+    /* width: 1600px; */
+    /* padding: 0; */
     gap: 3rem;
 }
 
 .review-txt {
-/*   */
-width: 400px;
-justify-self:center;
-align-self:center;
-top: 2rem;
-font-size: 1.7rem;
-font-family: 'Barlow Semi Condensed', sans-serif;
-text-transform: uppercase;
-color: rgb(191, 141, 91);
-text-align: center;
-margin: 0;
-padding-top: 2rem;
-} 
+/*   */max-width: 400px;/* justify-self:center; */align-self:center;top: 2rem;font-size: 1.7rem;font-family: 'Barlow Semi Condensed', sans-serif;text-transform: uppercase;color: rgb(191, 141, 91);text-align: center;margin: 0;padding-top: 2rem;} 
 
 .review-txt h3, .review-txt h4 {
 
@@ -372,58 +361,222 @@ padding-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: auto;
+    width: auto;
     gap: 4rem;
+    padding-bottom: 3rem;
+    
 }
 
 .customer-1, .customer-2, .customer-3 {
-background-color: rgb(255, 0, 0);
+position: relative;
+background-color: rgb(255, 255, 255);
 height: 350px;
 width: 350px;
+border-radius: 15px;
+box-sizing: border-box;
+padding: 3rem;
 
 }
+
+.quote-icon-1, .quote-icon-2, .quote-icon-3 {
+    position: absolute;
+    top: -40.5px;
+    left: 40.5px;
+    width:81px;
+    height: 82px ;
+
+}
+
+.cstmr-q {
+
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color:#666666;
+
+
+}
+
+.cstmr-style {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.cstmr-info {
+/* box-sizing: border-box; */
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #090600;
+    
+}
+
+.cstmr-img {
+
+    width: 50%;
+    height: auto;
+
+}
+
+.review-star {
+
+    width: 80%;
+    height: auto;
+}
+
+.cstmr-title { 
+    color: rgb(191, 141, 91);
+}
+
 
 /*------------ footer--------------*/
 
 
 .footer {
-    z-index: 5;
-    background-color: black;
-    height:400px;
+    background-color: transparent;
+    margin: auto 0;
+}
+
+
+.footer-wrapper {
+
+background-color: #090600;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: baseline;
+box-sizing: border-box;
+padding: 1rem;
+gap: 2rem;
+
+
+
+    /*     background-color: black;
+    position: relative;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between ;
-    align-items: flex-start;
-    padding: 2rem 4rem 3rem 4rem;
+    justify-content:space-between;
+    align-items:flex-start;
     box-sizing: border-box;
-   
+    padding: 2rem 4rem 3rem 4rem; */
+
 }
 
-.foot-barber {
-    background-color: chartreuse;
-    height: 300px; /* ta bort height efter content är gjord!*/
-    width: 100%;
+.foot-barber, .foot-question,.foot-explore , .foot-info   {
+    position: relative;
+    max-width: 350px;
+    }
+
+.footer h4 {
+
+    font-size: 2rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    margin: 0;
+
+}
+
+.footer p, footer li {
+
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848380;
+    margin: 0;
+}
+
+.footer p {
+    padding-top: 2rem;
+}
+
+
+.footer li {
+    line-height: 3rem;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: rem;
+}
+
+
+    .address-content {
+    
+        flex-direction: column;
+    }
+
+    .adress{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .phone {
+        display: flex;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .email {
+        display: flex;
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+
+
+    .alogo-phone,.alogo-email, .alogo-map  {
+        height:2rem;
+        width:auto;
     }
     
-    .foot-explore {
-        background-color: chartreuse;
-        height: 300px;
-        width: 100%;
+
+    .foot-question-heading, .adress {
+
+        font-style: normal;
+
     }
-    
-    .foot-info {
-        background-color: chartreuse;
-        height: 300px;
-        width: 100%;
+
+    .email a, .phone a, .foot-explore a, .foot-info a {
+        text-decoration: none;
+        font-style: normal;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #848380;
+        margin: 0;
     }
-    
-    .foot-question {
-        background-color: chartreuse;
-        height: 300px;
-        width: 100%;
-    
+
+    .footer ul {
+        padding-left: 0;
     }
-    
+
+    ul.explore-list, ul.info-li {
+
+        list-style-type: none;
+        
+    }
+
+    .footer span {
+        box-sizing: border-box;
+        padding-right: 1rem;
+
+    }
+
+
 
     @media screen and (max-width:1720px) {
         
@@ -446,6 +599,12 @@ width: 350px;
         
     }
 
+    @media screen and (max-width:1200px) {
+
+ 
+        
+    }
+
 /* quick fix header responsivness */
 
     @media screen and (max-width:900px){
@@ -465,6 +624,20 @@ width: 350px;
 
             font-size: 3rem;
         }
+
+        .footer-wrapper {
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .foot-barber, .foot-question,.foot-explore , .foot-info   {
+            position: relative;
+            width: 300px;
+            max-width: 300px;
+            padding-bottom: 1rem;
+            }
+
+        
 
     .products p, .body-txt p, .about-article {
     font-size: 1rem;
