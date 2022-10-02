@@ -12,7 +12,7 @@ color: rgb(191, 141, 91);
 margin: 0;
 }
 
-h2 {
+h2 {    
     font-size: 6rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
@@ -118,7 +118,7 @@ transition: .2s ease-in-out;
     flex-wrap: wrap;
 
     max-height:1440px;
-    max-width: 900px;
+    max-width: 980px;
     margin:0 auto;
     box-sizing: border-box;
     padding: 5rem 5rem;
@@ -196,6 +196,14 @@ margin-left: 15%;
     background:linear-gradient(rgba(191, 146, 91, 0.96), rgba(0, 0, 0, 0.82));
     border-radius: 13px;
     margin-bottom: 5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.service-1:hover,.service-2:hover,.service-3:hover,.service-4:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+
 }
 
 .products p {
@@ -235,6 +243,7 @@ top: -100px;
  flex-wrap: wrap;
  align-items: flex-end;
  justify-content:center;
+ padding-bottom: 12rem;
 }
 
 .about-bg {
@@ -323,12 +332,21 @@ margin: 0;
 
 /*----------------------review---------------*/
 
+.review {
+
+    padding-bottom: 12rem;
+}
+
 .review-wrapper {
     position: relative;
     display: flex;
     flex-direction:column;
     background-color: #EAE8DE;
+    max-width: 1680px;
+    border-radius: 15px;
     gap: 3rem;
+
+    margin: 0 auto;
 }
 
 .review-txt {
@@ -521,7 +539,13 @@ gap: 2rem;
         text-transform: uppercase;
         color: #848380;
         margin: 0;
+        transition: .2s ease-in-out;
     }
+
+    .email a:hover, .phone a:hover, .foot-explore a:hover, .foot-info a:hover{
+        cursor: pointer;
+        color: rgb(191, 141, 91);
+        }
 
     .footer ul {
         padding-left: 0;
