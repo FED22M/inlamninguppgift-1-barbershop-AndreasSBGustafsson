@@ -177,6 +177,7 @@ margin-left: 15%;
     text-transform: uppercase;
     color: rgb(191, 141, 91);
     text-decoration: none;
+    transition:0.2s ease-in-out;
 }
 .learn-more-button:hover {
     color: purple;
