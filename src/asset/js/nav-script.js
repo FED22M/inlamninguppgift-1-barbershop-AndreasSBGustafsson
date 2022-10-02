@@ -6,3 +6,5 @@ menuBtn.addEventListener('click', () => {
 menu.classList.toggle('menu-open');
 
 });
+
+  
