@@ -3,15 +3,12 @@ body {
     padding: 0;
 }
 
-/* text size */
-
 h1 {
 font-size: 1rem;
 font-family: 'Poppins', sans-serif;
 font-weight: 500;
 text-transform: uppercase;
 color: rgb(191, 141, 91);
-
 margin: 0;
 }
 
@@ -25,7 +22,6 @@ h2 {
 }
 
 .your-style {
-    /* color: transparent; */
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
 }
@@ -40,7 +36,7 @@ h2 {
  z-index: 5;
 }
 
-    .header, .products , .about, .review {
+.header, .products , .about, .review {
     background: url('../img/Barbershop.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -56,13 +52,7 @@ h2 {
     padding: 3rem 0;
 }
 
-
-
-
 /*----------- Header ---------------*/
-
-
-
 
 .header-wrapper {
     display: flex;
@@ -70,8 +60,6 @@ h2 {
 
     max-height:1440px;
     max-width: 900px;
-    /* min-height:1440px;
-    min-width: 720px; */
     margin:0 auto;
     box-sizing: border-box;
     padding: 5rem 5rem;
@@ -87,7 +75,6 @@ h2 {
     top: 30px;
     margin: 0;
     border-left: 4px solid rgb(191, 141, 91);
-    /* justify-content: center; */
 }
 
 
@@ -97,7 +84,6 @@ margin-left: 15%;
 }
 
 .body-txt p {
-    text-overflow: wrap;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -150,6 +136,7 @@ margin-left: 15%;
     padding:0 1rem;
     background:linear-gradient(rgba(191, 146, 91, 0.96), rgba(0, 0, 0, 0.82));
     border-radius: 13px;
+    margin-bottom: 5rem;
 }
 
 .products p {
@@ -180,22 +167,6 @@ top: -100px;
 }
 /*-----------------about----------------*/
 
-
-
-/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); prhombe size */
-
-
-.about {
-    /* height: 920px; */
-
-
-
-/*     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
 .about-wrapper{
  background-color:transparent;
  position: relative;
@@ -214,8 +185,6 @@ top: -100px;
     width: 1376px;
     border-radius: 13px;
     justify-content: flex-end;
-    /* padding-bottom: 7rem; */
-    /* height: 610px; */
     padding: 5rem 0 2rem 0;
 }
 
@@ -227,30 +196,11 @@ top: -100px;
     width:480px;
     object-fit: cover;
     border-radius: 15px;
-/*     justify-self: flex-start;
-    align-self: flex-start; */
 }
 
-/* .about-img-wrapper::after {
-
-    content: '';
-    position: absolute;
-    top:-68px;
-    left:119px;
-    height:100%;
-    width: 100%;
-    background:linear-gradient(rgba(191, 146, 91, 0.501), rgba(255, 255, 255, 0.82));
-    } */
-
-
-
 .about-txt {
- /*  background-color: green; */
- /* position:absolute; */
  width: 725px;
  z-index: 2;
- /*  right:86px;
- top:35px; */
  }
 
 .about-heading {
@@ -259,23 +209,18 @@ top: -100px;
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(191, 141, 91);
-  /*   -webkit-text-fill-color: rgb(191, 141, 91);
-    -webkit-text-stroke: 0.4px;
-    -webkit-text-stroke-color:white; */
-
     margin: 0;
 }
 
 .about-subHeading {
-
     font-size: 3rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color:#333333 ;
-
     margin: 0;
 }
+
 .about-article {
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
@@ -289,27 +234,20 @@ top: -100px;
  align-items: center;
  width:438px;
  height:118px;
-/* -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 20%); komplitett till gamla webbläsare*/
-  background-size: fill, cover;
+  background-size:cover;
   background: rgb(191, 141, 91);
   clip-path: polygon(50% 0 , 100% 50%, 50% 100%, 0 50%);
   margin: 0 auto ;
   gap:1rem;
 }
 
-.exp-icon {
-
-}
-
 .exp-txt{
 width: 80px;
 font-family: 'Poppins', sans-serif;
-
 font-size: 1rem;
 text-transform: uppercase;
 color: rgb(254, 254, 254);
 line-height:0.8;
-
 margin: 0;
 }
 
@@ -318,33 +256,35 @@ margin: 0;
     margin: 0;
 }
 
-
 .year {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: -10px;
 }
+
 /*----------------------review---------------*/
 
 .review-wrapper {
-    /* margin: 0 auto; */
     position: relative;
     display: flex;
     flex-direction:column;
-    /* justify-content: center; */
-    /* align-items: center; */
     background-color: #EAE8DE;
-    /*     height: 510px; */
-    /* width: 1600px; */
-    /* padding: 0; */
     gap: 3rem;
 }
 
 .review-txt {
-/*   */max-width: 400px;/* justify-self:center; */align-self:center;top: 2rem;font-size: 1.7rem;font-family: 'Barlow Semi Condensed', sans-serif;text-transform: uppercase;color: rgb(191, 141, 91);text-align: center;margin: 0;padding-top: 2rem;} 
+max-width: 400px;
+align-self:center;
+top: 2rem;
+font-size: 1.7rem;
+font-family: 'Barlow Semi Condensed', sans-serif;
+text-transform: uppercase;
+color: rgb(191, 141, 91);
+text-align: center;
+margin: 0;
+padding-top: 2rem;} 
 
 .review-txt h3, .review-txt h4 {
-
     margin:0;
 }
 
@@ -385,17 +325,13 @@ padding: 3rem;
     left: 40.5px;
     width:81px;
     height: 82px ;
-
 }
 
 .cstmr-q {
-
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     color:#666666;
-
-
 }
 
 .cstmr-style {
@@ -405,24 +341,19 @@ padding: 3rem;
 }
 
 .cstmr-info {
-/* box-sizing: border-box; */
     padding-left: 2rem;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
     color: #090600;
-    
 }
 
 .cstmr-img {
-
     width: 50%;
     height: auto;
-
 }
 
 .review-star {
-
     width: 80%;
     height: auto;
 }
@@ -440,9 +371,7 @@ padding: 3rem;
     margin: auto 0;
 }
 
-
 .footer-wrapper {
-
 background-color: #090600;
 display: flex;
 flex-wrap: wrap;
@@ -453,19 +382,6 @@ box-sizing: border-box;
 padding: 1rem;
 gap: 2rem;
 
-
-
-    /*     background-color: black;
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:flex-start;
-    box-sizing: border-box;
-    padding: 2rem 4rem 3rem 4rem; */
-
 }
 
 .foot-barber, .foot-question,.foot-explore , .foot-info   {
@@ -474,19 +390,16 @@ gap: 2rem;
     }
 
 .footer h4 {
-
     font-size: 2rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
-
     margin: 0;
 
 }
 
 .footer p, footer li {
-
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -508,14 +421,8 @@ gap: 2rem;
     display: flex;
     justify-content: space-between;
     padding-top: 3rem;
-    padding-bottom: rem;
+    padding-bottom: 1rem;
 }
-
-
-    .address-content {
-    
-        flex-direction: column;
-    }
 
     .adress{
         display: flex;
@@ -535,14 +442,11 @@ gap: 2rem;
         padding-top: 2rem;
     }
 
-
-
     .alogo-phone,.alogo-email, .alogo-map  {
         height:2rem;
         width:auto;
     }
     
-
     .foot-question-heading, .adress {
 
         font-style: normal;
@@ -565,70 +469,40 @@ gap: 2rem;
     }
 
     ul.explore-list, ul.info-li {
-
         list-style-type: none;
-        
     }
 
     .footer span {
         box-sizing: border-box;
         padding-right: 1rem;
-
     }
 
-
-
     @media screen and (max-width:1720px) {
-        
-
         .products {
             flex-wrap: wrap;
         }
-
-
-
         .review-wrapper {
             width: 100%;
-        
         }
-
         .customer-wrapper {
             flex-wrap: wrap;
         }
-
-        
     }
-
-    @media screen and (max-width:1200px) {
-
- 
-        
-    }
-
-/* quick fix header responsivness */
 
     @media screen and (max-width:900px){
-
-
         .header-wrapper {
             width: 100%;
         }
-        
     }
-
 
     /* mobil media breakpoint*/
     @media screen and (max-width:768px) {
-
         .h2 {
-
             font-size: 3rem;
         }
-
         .footer-wrapper {
             flex-direction: column;
-            align-items: center;
-        
+            align-items: center;      
         }
         .foot-barber, .foot-question,.foot-explore , .foot-info   {
             position: relative;
@@ -636,20 +510,12 @@ gap: 2rem;
             max-width: 300px;
             padding-bottom: 1rem;
             }
-
-        
-
     .products p, .body-txt p, .about-article {
     font-size: 1rem;
-}
+    }
         .header-wrapper{
             padding: 5rem 1rem;
         }
-        /* .about-bg {
-
-        width: 100%;
-
-        } */
         .about-bg{
             padding-bottom: 2rem;
         }
@@ -660,17 +526,10 @@ gap: 2rem;
             width: 300px;
         }
         .about-txt {
-            /*  background-color: green; */
              position:relative;
-             /* height: 355px; */
-             width: 90%;
-             
+             width: 90%;       
             }
-
             .exp {
                 width: 275px;
             }
-
-
-
         }
