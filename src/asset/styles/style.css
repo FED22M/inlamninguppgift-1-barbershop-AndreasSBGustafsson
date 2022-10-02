@@ -51,6 +51,11 @@ align-self: center;
 
 }
 
+.logo-img {
+    height: 37px;
+    width: 129px;
+}
+
 .right {
 display: flex;
 align-items: center;
@@ -95,8 +100,20 @@ transition: .2s ease-in-out;
 
 
 
-.header, .products , .about, .review {
-    background: url('../img/Barbershop.jpg');
+/* .header,  .products , .about, .review {
+    background: url('../img/Barbershop.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.main {
+
+    background: url('../img/Barbershop.webp');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +133,6 @@ transition: .2s ease-in-out;
 .header-wrapper {
     display: flex;
     flex-wrap: wrap;
-
     max-height:1440px;
     max-width: 980px;
     margin:0 auto;
@@ -173,6 +189,9 @@ margin-left: 15%;
 
 
 .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:transparent;
     height: auto;
     width: 100%;
@@ -309,6 +328,11 @@ top: -100px;
   gap:1rem;
 }
 
+.calender-icon img {
+    height: 77px;
+    width: 75px;
+}
+
 .exp-txt{
 width: 80px;
 font-family: 'Poppins', sans-serif;
@@ -426,13 +450,13 @@ padding: 3rem;
 }
 
 .cstmr-img {
-    width: 50%;
-    height: auto;
+    width: 127px;
+    height: 126px;
 }
 
 .review-star {
-    width: 80%;
-    height: auto;
+    width: 76px;
+    height: 11px;
 }
 
 .cstmr-title { 
@@ -501,6 +525,14 @@ gap: 2rem;
     padding-bottom: 1rem;
 }
 
+.twitter-icon, .facebook-icon, .instagram-icon {
+
+    width: 67px;
+    height: 67px;
+
+} 
+
+
     .adress{
         display: flex;
         align-items: center;
@@ -519,9 +551,15 @@ gap: 2rem;
         padding-top: 2rem;
     }
 
+    .alogo {
+
+        height: 32px;
+        width: 32px;
+    }
+
     .alogo-phone,.alogo-email, .alogo-map  {
-        height:2rem;
-        width:auto;
+        height:32px;
+        width:32px;
     }
     
     .foot-question-heading, .adress {
