@@ -27,14 +27,73 @@ h2 {
 }
 
 .nav {
- width: 100vw;
- height: 3rem;
+ width: 100%;
  background-color: rgba(0, 0, 0, 0.711); 
  position: fixed;
+/*  display: flex;
+ justify-content: space-between; */
+ box-sizing: border-box;
  top: 0;
  left: 0; /* utifall det är mellanrum runt nav baren */
  z-index: 5;
 }
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+align-self: center;
+
+}
+
+.right {
+display: flex;
+align-items: center;
+
+}
+
+.hamburger {
+
+display:none;
+
+}
+
+
+.menu {
+height: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+list-style: none;
+margin: 0;
+align-items: center;
+
+
+
+}
+
+
+.menu-item {
+color: #fff;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+transition: .2s ease-in-out;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    color: rgb(191, 141, 91);
+    }
+
+
+
 
 .header, .products , .about, .review {
     background: url('../img/Barbershop.jpg');
@@ -497,6 +556,26 @@ gap: 2rem;
 
     /* mobil media breakpoint*/
     @media screen and (max-width:768px) {
+
+        .nav-inner {
+
+            width: 100%;
+            padding: 0 1.5rem;
+        }
+
+        .menu {
+
+            display: none;
+
+        }
+
+        .hamburger {
+
+            display: block;
+
+        }
+
+
         .h2 {
             font-size: 3rem;
         }
